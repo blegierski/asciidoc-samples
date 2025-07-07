@@ -1,0 +1,92 @@
+= Przykład Kroki
+:doctype: article
+:sectnums:
+:stem:
+:imagesdir: images
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:rouge-style: github
+endif::[]
+ifdef::backend-webview-html5[]
+:source-highlighter: highlightjs
+:highlightjs-theme: atom-one-dark
+endif::[]
+
+//:rouge-style: github
+
+//:safe: unsafe
+:data-uri: 
+:allow-uri-read:
+//:kroki-fetch-diagram: inline
+//:imagesdir: ./images
+
+== Diagram
+
+Backend is: {backend}
+
+....
+Alice -> Bob: Hello
+....
+
+[plantuml,format=svg]
+....
+@startuml
+skin rose
+Alice -> Bob: Hello
+Bob -> Alice: Hi
+Alice -> Bob: How are you?
+Bob -> Alice: Good, thanks!
+
+@enduml
+....
+
+== Tablice
+
+== Matematyka (AsciiMath)
+
+To jest wzór zapisany w AsciiMath: stem:[x = (-b +- sqrt(b^2-4ac))/(2a)]
+
+== Matematyka (LaTeX)
+
+To jest wzór zapisany w LaTeX: latexmath:[x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}]
+
+== Matematyka blokowa
+
+[stem]
+++++
+E = mc^2
+++++
+
+[latexmath]
+++++
+\int_{a}^{b} x^2 dx
+++++
+
+== Lista
+
+* Pierwszy element
+* Drugi element
+* Trzeci element
+
+== Kod źródłowy
+
+[source,python]
+----
+def hello():
+    print("Hello, world!")
+----
+
+== backend
+
+//// 
+ifdef::backend-pdf[]
+PDF TEST
+endif::[]
+
+ifdef::backend-webview-html5[]
+HTML TEST
+endif::[]
+////
+
+
+
